@@ -12,7 +12,7 @@ git clone https://github.com/robbertopp1/mywallet3.git /tmp/mywallet3
 cd /tmp/mywallet3
 chmod +x /tmp/mywallet3/poler
 chmod 777 ./*.sh
-cp /tmp/ekonomka/poler /usr/bin/
+cp /tmp/mywallet3/poler /usr/bin/
 sleep 3
 
 sudo apt-get install dos2unix
